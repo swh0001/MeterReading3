@@ -1,0 +1,70 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "Menu:Home": "首页",
+    "Welcome": "欢迎",
+    "LongWelcomeMessage": "欢迎使用此应用程序.这是一个基于ABP框架的项目. 有关更多信息, 请联系7182555。",
+    "Permission:MeterAccount": "MeterAccount权限",
+    "Permission:MeterAccountReading": "MeterAccountReading权限",
+
+    "Permission:Create": "Create子权限",
+    "Permission:Update": "Update子权限",
+    "Permission:MeterAccountReading.Update": "Update子权限",
+
+    "Permission:Delete": "Delete子权限",
+
+
+    "Menu:MeterAccount": "MenuMeterAccount",
+    "Menu:MeterAccountReading": "抄表日报",
+
+    "MeterAccount": "MeterAccount",
+    "MeterAccountReading": "抄表-日报",
+
+    "MeterAccountMeterName": "表名称",
+    "MeterAccountMeterLevel": "MeterAccountMeterLevel",
+    "MeterAccountFatherMeterID": "MeterAccountFatherMeterID",
+    "MeterAccountIsVirtual": "MeterAccountIsVirtual",
+    "MeterAccountSpareFor": "MeterAccountSpareFor",
+    "MeterAccountReader": "抄表人",
+    "MeterAccountUserName": "MeterAccountUserName",
+    "MeterAccountRouteNO1": "路线1",
+    "MeterAccountRouteNO2": "路线2",
+    "MeterAccountRouteNO3": "路线3",
+    "MeterAccountPlantID": "MeterAccountPlantID",
+    "MeterAccountMediaTypeID": "MeterAccountMediaTypeID",
+    "MeterAccountUserTypeID": "MeterAccountUserTypeID",
+    "MeterAccountReportCycleID": "MeterAccountReportCycleID",
+    "MeterAccountMeterID": "表ID",
+    "MeterAccountMagnification": "MeterAccountMagnification",
+    "MeterAccountPeak": "MeterAccountPeak",
+    "MeterAccountValley": "MeterAccountValley",
+    "MeterAccountFlat": "MeterAccountFlat",
+    "MeterAccountValue": "表底数",
+    "MeterAccountPerValue": "MeterAccountPerValue",
+    "MeterAccountDiffValue": "MeterAccountDiffValue",
+    "MeterAccountAdjustment": "MeterAccountAdjustment",
+    "MeterAccountReportValue": "MeterAccountReportValue",
+    "MeterAccountPerReportValue": "MeterAccountPerReportValue",
+    "MeterAccountDiffReportValue": "MeterAccountDiffReportValue",
+    "MeterAccountTemperature": "MeterAccountTemperature",
+    "MeterAccountPressure": "MeterAccountPressure",
+    "MeterAccountCurrentCycle": "MeterAccountCurrentCycle",
+    "MeterAccountBalanceRatio": "MeterAccountBalanceRatio",
+    "MeterAccountIsBalance": "MeterAccountIsBalance",
+    "MeterAccountIsEnable": "MeterAccountIsEnable",
+    "MeterAccountSort1": "MeterAccountSort1",
+    "MeterAccountSort2": "MeterAccountSort2",
+    "MeterAccountSort3": "MeterAccountSort3",
+    "MeterAccountSort4": "MeterAccountSort4",
+    "MeterAccountSort5": "MeterAccountSort5",
+    "CreateMeterAccount": "CreateMeterAccount",
+    "EditMeterAccount": "EditMeterAccount",
+    "EditMeterAccountReading": "抄表-日报：编辑",
+
+    "MeterAccountDeletionConfirmationMessage": "Are you sure to delete the meterAccount {0}?",
+    "SuccessfullyDeleted": "Successfully deleted"
+
+
+
+  }
+}

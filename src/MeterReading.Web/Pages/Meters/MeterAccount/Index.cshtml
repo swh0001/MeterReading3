@@ -1,0 +1,48 @@
+@page
+@using MeterReading.Permissions
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Layout
+@using MeterReading.Web.Pages.Meters.MeterAccount
+@using MeterReading.Localization
+@using MeterReading.Web.Menus
+@model IndexModel
+@inject IPageLayout PageLayout
+@inject IHtmlLocalizer<MeterReadingResource> L
+@inject IAuthorizationService Authorization
+@{
+    PageLayout.Content.Title = L["MeterAccount"].Value;
+    PageLayout.Content.BreadCrumb.Add(L["Menu:MeterAccount"].Value);
+    PageLayout.Content.MenuItemName = MeterReadingMenus.MeterAccount;
+}
+
+@section scripts
+{
+    <abp-script src="/Pages/Meters/MeterAccount/index.js" />
+}
+@section styles
+{
+    <abp-style src="/Pages/Meters/MeterAccount/index.css"/>
+}
+
+<abp-card>
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>@L["MeterAccount"]</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-right">
+			    @if (await Authorization.IsGrantedAsync(MeterReadingPermissions.MeterAccount.Create))
+                {
+                <abp-button id="NewMeterAccountButton"
+                            text="@L["CreateMeterAccount"].Value"
+                            icon="plus"
+                            button-type="Primary" />
+                }
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="MeterAccountTable" class="nowrap"/>
+    </abp-card-body>
+</abp-card>
